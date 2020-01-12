@@ -1,0 +1,30 @@
+<!--<ion-header>-->
+  <ion-toolbar>
+    <!--<ion-title>Music Quiz</ion-title>-->
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-button color="" style="padding-right: 5%;" slot="end" (click)="playAudio()">
+      <ion-icon *ngIf=!isPlaying() style="color: white;" size="small" name="play"></ion-icon>
+      <ion-icon *ngIf=isPlaying() style="color: white;" size="small" name="pause"></ion-icon>
+    </ion-button>
+    
+  </ion-toolbar>
+<!--</ion-header>-->
+
+<ion-content>
+  <div class="ion-padding" style="text-align: center;">
+    
+    <img src="{{activeQuestion?.image}}"/>
+    
+    <div style="text-align: center;">
+    <ion-button class="ion-activatable optionButton" disabled="{{disabled}}" *ngFor="let option of suffledOptions; let i=index" (click)="isCorrect(option)">{{option}}<ion-ripple-effect></ion-ripple-effect></ion-button>
+    </div>
+
+    <p class="feedback">{{feedback}}</p>
+    <ion-button 
+    *ngIf=nextQuestion
+    (click)="setQuestion()" tappable ><ion-icon slot="start" name="arrow-forward"></ion-icon>Next Question</ion-button>
+  
+  </div>
+</ion-content>

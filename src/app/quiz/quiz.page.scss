@@ -1,0 +1,17 @@
+ion-content {
+    .title {
+        font-weight: bold;
+        text-align: center;
+    }
+    .feedback {
+        text-align: center;
+    }
+    .ion-activatable {
+        position:relative;
+        overflow: hidden;
+    }
+    .optionButton {
+        width: 15%;
+        margin: 1%;
+    }
+}

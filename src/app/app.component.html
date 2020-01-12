@@ -1,0 +1,18 @@
+<ion-app>
+  <ion-menu contentId="content" side="start" menuId="first">
+      <!--<ion-header>
+        <ion-toolbar color="light">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>-->
+      <ion-content>
+        <ion-list>
+          <ion-item 
+          (click)="goToPage('home')"><ion-icon slot="start" name="home"></ion-icon>Home</ion-item>
+          <ion-item 
+          (click)="goToPage('help')"><ion-icon slot="start" name="help-circle"></ion-icon>Help</ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  <ion-router-outlet id="content" main></ion-router-outlet>
+</ion-app>

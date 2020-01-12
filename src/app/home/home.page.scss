@@ -1,0 +1,15 @@
+ion-content {
+    --ion-background-color: #85a3c2;
+    --background: #85a3c2 url('../../assets/img/home-page-image-white.png') no-repeat center center / 350px;
+    .title {
+        font-size: 270%;
+        font-weight: bold;
+        text-align: center;
+    }
+    .image {
+        width: 70%;
+    }
+}
+ion-button {
+    width: 50%;
+}

@@ -1,0 +1,28 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-menu-button autoHide="false"></ion-menu-button>
+  </ion-buttons> 
+</ion-toolbar>
+
+<ion-content>
+  <div class="ion-padding">
+    <h1 class="title">Correct answers</h1>
+    
+    <ion-card *ngFor="let option of correctAnswersPrintArray; let i=index">
+      <ion-card-header>
+        <ion-card-title>Question {{i + 1}}
+        <ion-icon *ngIf=(correctAnswersPrintAmount[i]) name="checkmark-circle" style="color: green;"></ion-icon>
+        <ion-icon *ngIf=!(correctAnswersPrintAmount[i]) name="close-circle" style="color: red;"></ion-icon>
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <img src="{{correctAnswersPrintArray[i].image}}"/>
+        <h4 style="text-transform: uppercase; text-align: center;">Correct answer: {{correctAnswersPrintArray[i].note}}</h4>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button expand="block"
+    (click)="goToPage('home')" tappable><ion-icon slot="start" name="home"></ion-icon>Return Home</ion-button>
+  </div>
+</ion-content>

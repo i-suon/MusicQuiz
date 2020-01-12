@@ -1,0 +1,36 @@
+[{
+    "note": "c",
+    "image": "../assets/img/g-clef-c.png",
+    "audio": "../assets/audio/C-note.mp3"
+},
+{
+    "note": "d",
+    "image": "../assets/img/g-clef-d.png",
+    "audio": "../assets/audio/D-note.mp3"
+},
+{
+    "note": "e",
+    "image": "../assets/img/g-clef-e.png",
+    "audio": "../assets/audio/E-note.mp3"
+},
+{
+    "note": "f",
+    "image": "../assets/img/g-clef-f.png",
+    "audio": "../assets/audio/F-note.mp3"
+},
+{
+    "note": "g",
+    "image": "../assets/img/g-clef-g.png",
+    "audio": "../assets/audio/G-note.mp3"
+},
+{
+    "note": "a",
+    "image": "../assets/img/g-clef-a.png",
+    "audio": "../assets/audio/A-note.mp3"
+},
+{
+    "note": "h",
+    "image": "../assets/img/g-clef-h.png",
+    "audio": "../assets/audio/H-note.mp3"
+}
+]
